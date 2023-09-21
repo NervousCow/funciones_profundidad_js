@@ -56,7 +56,15 @@ const data = [
 
 */
 
+function Post(titulo, avatar, texto) {
+  this.titulo = titulo;
+  this.avatar = avatar;
+  this.texto = texto;
 
+};
+
+// const instanciaPost = new Post("titulo", "avatar", "texto");
+// console.log(instanciaPost);
 
 /*
 
@@ -66,3 +74,11 @@ const data = [
 
 */
 
+let posts = []
+
+for (const dato of data) {
+  posts += new Post(dato.titulo, dato.avatar, dato.texto);
+
+}
+
+console.log(posts)
